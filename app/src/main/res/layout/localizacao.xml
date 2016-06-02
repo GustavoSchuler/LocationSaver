@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Saver"
+        android:id="@+id/txAppTitle"
+        android:textColor="#0919ff"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Latitude:"
+        android:id="@+id/txLatitude"
+        android:textColor="#000000" />
+
+    <TextView android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Longitude:"
+        android:id="@+id/txLongitude"
+        android:textColor="#000000" />
+
+    <TextView android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Altitude:"
+        android:id="@+id/txAltitude"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Velocidade Atual:"
+        android:id="@+id/txVelocidade"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/velocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <WebView
+        android:id="@+id/mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="SALVAR"
+        android:id="@+id/btnSave"
+        android:layout_gravity="center_horizontal"
+        android:onClick="saveLocation" />
+</LinearLayout>
